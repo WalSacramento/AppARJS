@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
     <title>Mostra TecCultura - Realidade Aumentada</title>
   </head>
-  <body style="margin: 0px; overflow: hidden;">
+  <body style="margin: 0px; overflow: hidden">
     <script type="text/javascript" src="/./assets/script.js"></script>
 
     <a-scene
@@ -34,13 +37,90 @@
           autoplay
           crossorigin
         ></video>
+        <video
+          id="video3"
+          src="/assets/videos/Casa Aposentadoria ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video4"
+          src="/assets/videos/Casa do Penedo ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video5"
+          src="/assets/videos/Catedral Nossa Senhora do Rosario ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video6"
+          src="/assets/videos/Convento Nossa Senhora dos Anjos ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video7"
+          src="/assets/videos/Igreja da Santa Cruz - Vertical Video.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video8"
+          src="/assets/videos/Igreja de São Goncalo ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video9"
+          src="/assets/videos/Igreja Nossa Senhora Rosário dos Pretos ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video10"
+          src="/assets/videos/Mercado Publico ace5.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video11"
+          src="/assets/videos/Mirante da Rocheira.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video12"
+          src="/assets/videos/Oratório da Forca.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
+        <video
+          id="video13"
+          src="/assets/videos/paço imperial.mp4"
+          type="video/mp4"
+          autoplay
+          crossorigin
+        ></video>
       </a-assets>
 
       <a-marker
         d="animated-marker"
         type="pattern"
         preset="custom"
-        url="assets/pattern-marcador_1.patt"
+        url="makers/pattern-marcador_1.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -63,7 +143,7 @@
         d="animated-marker"
         type="pattern"
         preset="custom"
-        url="assets/marker.patt"
+        url="makers/pattern-marcador_2.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -73,7 +153,7 @@
         <a-video
           width="1.5"
           height="1"
-          scale="0.5 0.5 0.5"
+          scale="1 1 1"
           position="0 0 0"
           rotation="-90 0 0"
           class="clickable"
@@ -82,6 +162,281 @@
         ></a-video>
       </a-marker>
 
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_3.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 3"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video3"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_4.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 4"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video4"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_5.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 5"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video5"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_5.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 5"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video5"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_6.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 6"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video6"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_7.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 7"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video7"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_8.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 8"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video8"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_9.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 9"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video9"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_10.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 10"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video10"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_11.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 11"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video11"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_12.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 12"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video12"
+        ></a-video>
+      </a-marker>
+
+      <a-marker
+        d="animated-marker"
+        type="pattern"
+        preset="custom"
+        url="makers/pattern-marcador_13.patt"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+        video-marker="videoId: 13"
+      >
+        <a-video
+          width="1.5"
+          height="1"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="-90 0 0"
+          class="clickable"
+          gesture-handler
+          src="#video13"
+        ></a-video>
+      </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
